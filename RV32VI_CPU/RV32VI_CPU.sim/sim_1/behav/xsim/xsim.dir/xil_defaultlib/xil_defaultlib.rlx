@@ -1,0 +1,16 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1743565542,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/cpu.v,,blk_mem_gen_0,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1743577458,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sim_1/new/cpu_top_tb.v,1743565443,verilog,,,,CPU_Top_tb,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/cpu.v,1743608407,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/decoder.v,,CPU_Top,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/decoder.v,1743575623,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/exe2.v,,Decoder,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/exe2.v,1743577004,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/ifetch.v,,exe,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/ifetch.v,1743572055,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/mem_stage.v,,ifetch,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/mem_stage.v,1743574844,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/regfile.v,,MEM_stage,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/regfile.v,1743565350,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/timer.v,,regfile,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/timer.v,1743565332,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/wb.v,,Timer,,,,,,,,
+E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/wb.v,1743565359,verilog,,E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sim_1/new/cpu_top_tb.v,,wb,,,,,,,,

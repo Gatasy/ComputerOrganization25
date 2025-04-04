@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_Top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU_Top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,145.167 ns"></ZoomEndTime>
+      <Cursor1Time time="191.893 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="533"></NameColumnWidth>
+      <ValueColumnWidth column_width="227"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/CPU_Top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/pc_if" type="array">
+      <obj_property name="ElementShortName">pc_if[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_if[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/pc_id" type="array">
+      <obj_property name="ElementShortName">pc_id[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_id[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/pc_ex" type="array">
+      <obj_property name="ElementShortName">pc_ex[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_ex[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/pc_mem" type="array">
+      <obj_property name="ElementShortName">pc_mem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_mem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/pc_wb" type="array">
+      <obj_property name="ElementShortName">pc_wb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_wb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/IF_inst" type="array">
+      <obj_property name="ElementShortName">IF_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/IF_over" type="logic">
+      <obj_property name="ElementShortName">IF_over</obj_property>
+      <obj_property name="ObjectShortName">IF_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/ID_over" type="logic">
+      <obj_property name="ElementShortName">ID_over</obj_property>
+      <obj_property name="ObjectShortName">ID_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/EXE_over" type="logic">
+      <obj_property name="ElementShortName">EXE_over</obj_property>
+      <obj_property name="ObjectShortName">EXE_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/MEM_over" type="logic">
+      <obj_property name="ElementShortName">MEM_over</obj_property>
+      <obj_property name="ObjectShortName">MEM_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/WB_over" type="logic">
+      <obj_property name="ElementShortName">WB_over</obj_property>
+      <obj_property name="ObjectShortName">WB_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/reset_delay_cnt" type="array">
+      <obj_property name="ElementShortName">reset_delay_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_delay_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/stall_counter" type="array">
+      <obj_property name="ElementShortName">stall_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">stall_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/FETCH" type="array">
+      <obj_property name="ElementShortName">FETCH[2:0]</obj_property>
+      <obj_property name="ObjectShortName">FETCH[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/DECODE" type="array">
+      <obj_property name="ElementShortName">DECODE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">DECODE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/EXE" type="array">
+      <obj_property name="ElementShortName">EXE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">EXE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/MEM" type="array">
+      <obj_property name="ElementShortName">MEM[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/WB" type="array">
+      <obj_property name="ElementShortName">WB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU_Top_tb/uut/timer/MAX_CYCLES" type="array">
+      <obj_property name="ElementShortName">MAX_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_CYCLES[31:0]</obj_property>
+   </wvobject>
+</wave_config>

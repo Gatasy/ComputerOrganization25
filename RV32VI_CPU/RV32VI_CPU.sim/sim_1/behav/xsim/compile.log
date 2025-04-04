@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Top
+WARNING: [VRFC 10-3380] identifier 'ID_EXE_bus_r' is used before its declaration [E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/cpu.v:97]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/exe2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/ifetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sources_1/new/wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/RV32VI_CPU/RV32VI_CPU.srcs/sim_1/new/cpu_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Top_tb

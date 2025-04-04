@@ -1,0 +1,34 @@
+Time resolution is 1 ps
+Block Memory Generator module CPU_Top_tb.uut.data_memory.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_Top_tb.uut.inst_memory.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Time=0 | rst=1 | pc_if=00000000 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000013
+Time=20000 | rst=0 | pc_if=00000000 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000013
+Time=45000 | rst=0 | pc_if=00000000 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000000
+Time=75000 | rst=0 | pc_if=00000004 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000000
+Time=115000 | rst=0 | pc_if=00000004 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00b50533
+Time=125000 | rst=0 | pc_if=00000008 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00b50533
+Time=135000 | rst=0 | pc_if=00000008 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000004 | IF_inst=00b50533
+Time=165000 | rst=0 | pc_if=00000008 | pc_id=00000000 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000004 | IF_inst=00a52513
+Time=175000 | rst=0 | pc_if=0000000c | pc_id=00000004 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000004 | IF_inst=00a52513
+Time=185000 | rst=0 | pc_if=0000000c | pc_id=00000004 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00a52513
+Time=215000 | rst=0 | pc_if=0000000c | pc_id=00000004 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=000005b7
+Time=225000 | rst=0 | pc_if=00000010 | pc_id=00000008 | pc_ex=00000000 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=000005b7
+Time=235000 | rst=0 | pc_if=00000010 | pc_id=00000008 | pc_ex=00000004 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=000005b7
+Time=265000 | rst=0 | pc_if=00000010 | pc_id=00000008 | pc_ex=00000004 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=0085a283
+Time=275000 | rst=0 | pc_if=00000014 | pc_id=0000000c | pc_ex=00000004 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=0085a283
+Time=285000 | rst=0 | pc_if=00000014 | pc_id=0000000c | pc_ex=00000008 | pc_mem=00000000 | pc_wb=00000008 | IF_inst=0085a283
+Time=305000 | rst=0 | pc_if=00000014 | pc_id=0000000c | pc_ex=00000008 | pc_mem=00000000 | pc_wb=0000000c | IF_inst=0085a283
+Time=315000 | rst=0 | pc_if=00000014 | pc_id=0000000c | pc_ex=00000008 | pc_mem=00000000 | pc_wb=0000000c | IF_inst=00e50533
+Time=325000 | rst=0 | pc_if=00000018 | pc_id=00000010 | pc_ex=00000008 | pc_mem=00000000 | pc_wb=0000000c | IF_inst=00e50533
+Time=335000 | rst=0 | pc_if=00000018 | pc_id=00000010 | pc_ex=0000000c | pc_mem=00000000 | pc_wb=0000000c | IF_inst=00e50533
+Time=355000 | rst=0 | pc_if=00000018 | pc_id=00000010 | pc_ex=0000000c | pc_mem=00000000 | pc_wb=00000010 | IF_inst=00e50533
+Time=365000 | rst=0 | pc_if=00000018 | pc_id=00000010 | pc_ex=0000000c | pc_mem=00000000 | pc_wb=00000010 | IF_inst=00c52223
+Time=375000 | rst=0 | pc_if=0000001c | pc_id=00000014 | pc_ex=0000000c | pc_mem=00000000 | pc_wb=00000010 | IF_inst=00c52223
+Time=385000 | rst=0 | pc_if=0000001c | pc_id=00000014 | pc_ex=00000010 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00c52223
+Time=415000 | rst=0 | pc_if=0000001c | pc_id=00000014 | pc_ex=00000010 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000000
+Time=425000 | rst=0 | pc_if=00000020 | pc_id=00000018 | pc_ex=00000010 | pc_mem=00000000 | pc_wb=00000000 | IF_inst=00000000
+Time=435000 | rst=0 | pc_if=00000020 | pc_id=00000018 | pc_ex=00000014 | pc_mem=00000010 | pc_wb=00000014 | IF_inst=00000000
+Time=445000 | rst=0 | pc_if=00000020 | pc_id=00000018 | pc_ex=00000014 | pc_mem=00000014 | pc_wb=00000014 | IF_inst=00000000
+Time=455000 | rst=0 | pc_if=00000020 | pc_id=00000018 | pc_ex

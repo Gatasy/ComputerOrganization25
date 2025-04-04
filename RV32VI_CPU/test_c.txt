@@ -1,0 +1,11 @@
+#include <stdint.h>
+
+int32_t func(int32_t a, int32_t b) {
+    int32_t c;
+    c = a + b;      // R型指令 (add)
+    c = c + 10;     // I型计算立即数指令 (addi)
+    int32_t arr[4] = {1, 2, 3, 4}; 
+    c += arr[2];    // lw 加载 (c += 3)
+    arr[1] = c;     // sw 存储
+    return c;
+}
