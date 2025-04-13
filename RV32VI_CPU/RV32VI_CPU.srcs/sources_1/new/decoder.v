@@ -100,23 +100,23 @@ module Decoder(
     assign inst_SLTI   = (opcode == 7'b0010011) & (func3 == 3'b010);
     assign inst_SLTIU  = (opcode == 7'b0010011) & (func3 == 3'b011);
     assign inst_XORI   = (opcode == 7'b0010011) & (func3 == 3'b100);
-    assign inst_ORI    = (opcode == 7'b0010011) & (func3 == 7'b110);
-    assign inst_ANDI   = (opcode == 7'b0010011) & (func3 == 7'b111);
-    assign inst_SLLI   = (opcode == 7'b0010011) & (func3 == 7'b001);
-    assign inst_SRLI   = (opcode == 7'b0010011) & (func3 == 7'b101) & (func7 == 7'b0000000);
-    assign inst_SRAI   = (opcode == 7'b0010011) & (func3 == 7'b101) & (func7 == 7'b0100000);
+    assign inst_ORI    = (opcode == 7'b0010011) & (func3 == 3'b110);
+    assign inst_ANDI   = (opcode == 7'b0010011) & (func3 == 3'b111);
+    assign inst_SLLI   = (opcode == 7'b0010011) & (func3 == 3'b001);
+    assign inst_SRLI   = (opcode == 7'b0010011) & (func3 == 3'b101) & (func7 == 7'b0000000);
+    assign inst_SRAI   = (opcode == 7'b0010011) & (func3 == 3'b101) & (func7 == 7'b0100000);
 
-    assign inst_ADD    = (opcode == 7'b0110011) & (func3 == 7'b000) & (func7 == 7'b0000000); 
-    assign inst_SUB    = (opcode == 7'b0110011) & (func3 == 7'b000) & (func7 == 7'b0100000);
-    assign inst_SLL    = (opcode == 7'b0110011) & (func3 == 7'b001);
-    assign inst_SLT    = (opcode == 7'b0110011) & (func3 == 7'b010);
-    assign inst_SLTU   = (opcode == 7'b0110011) & (func3 == 7'b011);
-    assign inst_XOR    = (opcode == 7'b0110011) & (func3 == 7'b100);
-    assign inst_SRL    = (opcode == 7'b0110011) & (func3 == 7'b101) & (func7 == 7'b0000000);
-    assign inst_SRA    = (opcode == 7'b0110011) & (func3 == 7'b101) & (func7 == 7'b0100000);
-    assign inst_OR     = (opcode == 7'b0110011) & (func3 == 7'b110);
-    assign inst_AND    = (opcode == 7'b0110011) & (func3 == 7'b111);
-    assign inst_SW     = (opcode == 7'b0100011) & (func3 == 7'b010);
+    assign inst_ADD    = (opcode == 7'b0110011) & (func3 == 3'b000) & (func7 == 7'b0000000); 
+    assign inst_SUB    = (opcode == 7'b0110011) & (func3 == 3'b000) & (func7 == 7'b0100000);
+    assign inst_SLL    = (opcode == 7'b0110011) & (func3 == 3'b001);
+    assign inst_SLT    = (opcode == 7'b0110011) & (func3 == 3'b010);
+    assign inst_SLTU   = (opcode == 7'b0110011) & (func3 == 3'b011);
+    assign inst_XOR    = (opcode == 7'b0110011) & (func3 == 3'b100);
+    assign inst_SRL    = (opcode == 7'b0110011) & (func3 == 3'b101) & (func7 == 7'b0000000);
+    assign inst_SRA    = (opcode == 7'b0110011) & (func3 == 3'b101) & (func7 == 7'b0100000);
+    assign inst_OR     = (opcode == 7'b0110011) & (func3 == 3'b110);
+    assign inst_AND    = (opcode == 7'b0110011) & (func3 == 3'b111);
+    assign inst_SW     = (opcode == 7'b0100011) & (func3 == 3'b010);
 
     // load/store 类型判断
     wire inst_store;
