@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="soc_test_all_dc_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="soc_test_all_dc" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="353816063333333fs"></ZoomStartTime>
+      <ZoomEndTime time="353816239333334fs"></ZoomEndTime>
+      <Cursor1Time time="353816100000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="278"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/soc_test_all_dc/icacheNUM" type="array">
+      <obj_property name="ElementShortName">icacheNUM[17:0]</obj_property>
+      <obj_property name="ObjectShortName">icacheNUM[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/dcacheNUM" type="array">
+      <obj_property name="ElementShortName">dcacheNUM[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dcacheNUM[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/crc" type="array">
+      <obj_property name="ElementShortName">crc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">crc[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/init_enable" type="logic">
+      <obj_property name="ElementShortName">init_enable</obj_property>
+      <obj_property name="ObjectShortName">init_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uart_tx" type="logic">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/spi_miso" type="logic">
+      <obj_property name="ElementShortName">spi_miso</obj_property>
+      <obj_property name="ObjectShortName">spi_miso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uart_rx" type="logic">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/spi_mosi" type="logic">
+      <obj_property name="ElementShortName">spi_mosi</obj_property>
+      <obj_property name="ObjectShortName">spi_mosi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/spi_ss" type="logic">
+      <obj_property name="ElementShortName">spi_ss</obj_property>
+      <obj_property name="ObjectShortName">spi_ss</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/spi_clk" type="logic">
+      <obj_property name="ElementShortName">spi_clk</obj_property>
+      <obj_property name="ObjectShortName">spi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/init_sig" type="logic">
+      <obj_property name="ElementShortName">init_sig</obj_property>
+      <obj_property name="ObjectShortName">init_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uartdata" type="array">
+      <obj_property name="ElementShortName">uartdata[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">uartdata[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/sending_data" type="array">
+      <obj_property name="ElementShortName">sending_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sending_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/io_pin" type="array">
+      <obj_property name="ElementShortName">io_pin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_pin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/packetnum" type="array">
+      <obj_property name="ElementShortName">packetnum[8:0]</obj_property>
+      <obj_property name="ObjectShortName">packetnum[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uut/cpu_top/ifstage/o_pcAndInstr_64" type="array">
+      <obj_property name="ElementShortName">o_pcAndInstr_64[63:0]</obj_property>
+      <obj_property name="ObjectShortName">o_pcAndInstr_64[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uut/memory/i_ibusAddr_32" type="array">
+      <obj_property name="ElementShortName">i_ibusAddr_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ibusAddr_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uut/bus/i_addr_32" type="array">
+      <obj_property name="ElementShortName">i_addr_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_addr_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/uut/memory/o_ibusData_32" type="array">
+      <obj_property name="ElementShortName">o_ibusData_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_ibusData_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/datas" type="array">
+      <obj_property name="ElementShortName">datas[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datas[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/BPS_115200" type="array">
+      <obj_property name="ElementShortName">BPS_115200[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BPS_115200[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/soc_test_all_dc/ClockPeriod" type="array">
+      <obj_property name="ElementShortName">ClockPeriod[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ClockPeriod[31:0]</obj_property>
+   </wvobject>
+</wave_config>
