@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="313"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/cpu_top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/instAddr_32" type="array">
+      <obj_property name="ElementShortName">instAddr_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instAddr_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/instData_32" type="array">
+      <obj_property name="ElementShortName">instData_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instData_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/dataAddr_32" type="array">
+      <obj_property name="ElementShortName">dataAddr_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataAddr_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/dataWen_4" type="array">
+      <obj_property name="ElementShortName">dataWen_4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dataWen_4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/writeData_32" type="array">
+      <obj_property name="ElementShortName">writeData_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writeData_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/readData_32" type="array">
+      <obj_property name="ElementShortName">readData_32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readData_32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/swio_i" type="logic">
+      <obj_property name="ElementShortName">swio_i</obj_property>
+      <obj_property name="ObjectShortName">swio_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/timer_i" type="logic">
+      <obj_property name="ElementShortName">timer_i</obj_property>
+      <obj_property name="ObjectShortName">timer_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/inst_mem" type="array">
+      <obj_property name="ElementShortName">inst_mem[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_mem[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/data_mem" type="array">
+      <obj_property name="ElementShortName">data_mem[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_top_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>
