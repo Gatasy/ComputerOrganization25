@@ -104,7 +104,7 @@ module soc_core(
         // 外设接口
         .rx              (rx),
         .tx              (tx),
-        .spi_miso       (spi_miso),
+        .spi_miso        (spi_miso),
         .spi_mosi        (spi_mosi),
         .spi_ss          (spi_ss),
         .spi_clk         (spi_clk),

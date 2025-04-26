@@ -1,0 +1,584 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Apr 23 00:35:21 2025
+# Process ID: 17652
+# Current directory: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.runs/synth_1
+# Command line: vivado.exe -log data_init.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_init.tcl
+# Log file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.runs/synth_1/data_init.vds
+# Journal file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-L1Ul0lBY
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22000
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :3110 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16892 MB
+# Swap memory       :0 MB
+# Total Virtual     :16892 MB
+# Available Virtual :3688 MB
+#-----------------------------------------------------------
+source data_init.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 531.066 ; gain = 201.312
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/NItemp/25CourseComputerArchitecture/Asyncsys_bus_bus4LZU_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/utils_1/imports/synth_1/data_init.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/utils_1/imports/synth_1/data_init.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top data_init -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Device 21-9227] Part: xc7a200tfbg676-2 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12096
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1447.410 ; gain = 451.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'data_init' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:378]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:403]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:422]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_rx.v:21]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_rx.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_tx.v:21]
+	Parameter CLK_FRE bound to: 50 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_tx.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'data_init' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:23]
+WARNING: [Synth 8-7137] Register crc_data_reg[0] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[1] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[2] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[3] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[4] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[5] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[6] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[7] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[8] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[9] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[10] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[11] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[12] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[13] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[14] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[15] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[16] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[17] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[18] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[19] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[20] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[21] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[22] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[23] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[24] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[25] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[26] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[27] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[28] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[29] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[30] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[31] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[32] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[33] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[34] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[35] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[36] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[37] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[38] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[39] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[40] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[41] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[42] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[43] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[44] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[45] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[46] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[47] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[48] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[49] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[50] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[51] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[52] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[53] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[54] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[55] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[56] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[57] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[58] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[59] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[60] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[61] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[62] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[63] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[64] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[65] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[66] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[67] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[68] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[69] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[70] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[71] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[72] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[73] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[74] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[75] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[76] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[77] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[78] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[79] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[80] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[81] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[82] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[83] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[84] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[85] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[86] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[87] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[88] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[89] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[90] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[91] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[92] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[93] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[94] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[95] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[96] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[97] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[98] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+WARNING: [Synth 8-7137] Register crc_data_reg[99] in module data_init has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v:228]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1655.781 ; gain = 659.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.781 ; gain = 659.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1655.781 ; gain = 659.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1655.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'resetn'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_clk'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'resetn'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_clk'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:12]
+CRITICAL WARNING: [Common 17-1548] Command failed: invalid command name "SET_PROPERTY"
+ [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'lcd_rst'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_cs'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rs'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_wr'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rd'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_bl_ctr'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[0]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[1]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[2]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[3]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[4]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[5]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[6]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[7]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[8]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[9]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[10]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[11]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[12]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[13]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[14]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[15]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_int'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_sda'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_scl'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_rstn'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rst'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_cs'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rs'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_wr'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rd'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_bl_ctr'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[0]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[1]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[2]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[3]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[4]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[5]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[6]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[7]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[8]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[9]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[10]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[11]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[12]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[13]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[14]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[15]'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_int'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_sda'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_scl'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_rstn'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_clk'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/constrs_1/new/soc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/data_init_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/data_init_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1754.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1754.410 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              001
+                 S_START |                            10000 |                              010
+              S_REC_BYTE |                            01000 |                              011
+                  S_STOP |                            00100 |                              100
+                  S_DATA |                            00010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              001
+                 S_START |                             0010 |                              010
+             S_SEND_BYTE |                             0100 |                              011
+                  S_STOP |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 138   
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  11 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 135   
+	   4 Input    8 Bit        Muxes := 64    
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 272   
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 120   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    29|
+|3     |LUT1   |     3|
+|4     |LUT2   |   156|
+|5     |LUT3   |   305|
+|6     |LUT4   |   196|
+|7     |LUT5   |   129|
+|8     |LUT6   |   436|
+|9     |MUXF7  |   122|
+|10    |MUXF8  |    61|
+|11    |FDCE   |   373|
+|12    |FDPE   |     3|
+|13    |FDRE   |  1032|
+|14    |IBUF   |     4|
+|15    |OBUF   |   131|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1754.410 ; gain = 659.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1754.410 ; gain = 758.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1754.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'data_init' is not ideal for floorplanning, since the cellview 'data_init' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1754.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 21ddc82a
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 159 Warnings, 57 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1754.410 ; gain = 1214.441
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1754.410 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.runs/synth_1/data_init.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file data_init_utilization_synth.rpt -pb data_init_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 00:36:10 2025...

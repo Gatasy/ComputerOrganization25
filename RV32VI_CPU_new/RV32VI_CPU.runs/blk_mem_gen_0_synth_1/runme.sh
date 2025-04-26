@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/NItemp/RV32VI_CPU/RV32VI_CPU.runs/blk_mem_gen_0_synth_1'
+HD_PWD='E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/blk_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

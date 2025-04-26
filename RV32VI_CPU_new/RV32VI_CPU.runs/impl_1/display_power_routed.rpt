@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Wed Apr  2 20:56:47 2025
-| Host             : LAPTOP-0ELO93SN running 64-bit major release  (build 9200)
+| Date             : Wed Apr 23 21:17:42 2025
+| Host             : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
 | Command          : report_power -file display_power_routed.rpt -pb display_power_summary_routed.pb -rpx display_power_routed.rpx
 | Design           : display
-| Device           : xc7a200tfbv676-2
+| Device           : xc7a200tfbg676-2
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical

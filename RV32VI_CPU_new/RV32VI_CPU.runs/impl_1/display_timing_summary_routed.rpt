@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Apr  2 20:56:46 2025
-| Host         : LAPTOP-0ELO93SN running 64-bit major release  (build 9200)
+| Date         : Wed Apr 23 21:17:41 2025
+| Host         : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file display_timing_summary_routed.rpt -pb display_timing_summary_routed.pb -rpx display_timing_summary_routed.rpx -warn_on_violation
 | Design       : display
-| Device       : 7a200t-fbv676
+| Device       : 7a200t-fbg676
 | Speed File   : -2  PRODUCTION 1.23 2018-06-13
 | Design State : Routed
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

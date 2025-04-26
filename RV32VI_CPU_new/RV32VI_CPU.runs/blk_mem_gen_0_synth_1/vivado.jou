@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Apr  2 11:45:46 2025
-# Process ID: 6336
-# Current directory: E:/NItemp/RV32VI_CPU/RV32VI_CPU.runs/blk_mem_gen_0_synth_1
+# Start of session at: Wed Apr 23 21:14:09 2025
+# Process ID: 16012
+# Current directory: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/blk_mem_gen_0_synth_1
 # Command line: vivado.exe -log blk_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
-# Log file: E:/NItemp/RV32VI_CPU/RV32VI_CPU.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
-# Journal file: E:/NItemp/RV32VI_CPU/RV32VI_CPU.runs/blk_mem_gen_0_synth_1\vivado.jou
+# Log file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/blk_mem_gen_0_synth_1\vivado.jou
 # Running On        :DESKTOP-L1Ul0lBY
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22000
@@ -19,6 +19,6 @@
 # Host memory       :16892 MB
 # Swap memory       :0 MB
 # Total Virtual     :16892 MB
-# Available Virtual :4453 MB
+# Available Virtual :3918 MB
 #-----------------------------------------------------------
 source blk_mem_gen_0.tcl -notrace

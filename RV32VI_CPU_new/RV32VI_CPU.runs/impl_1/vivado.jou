@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Apr  2 20:54:49 2025
-# Process ID: 27092
-# Current directory: E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1
+# Start of session at: Wed Apr 23 21:16:13 2025
+# Process ID: 11092
+# Current directory: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1
 # Command line: vivado.exe -log display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source display.tcl -notrace
-# Log file: E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1/display.vdi
-# Journal file: E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1\vivado.jou
-# Running On        :LAPTOP-0ELO93SN
+# Log file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1/display.vdi
+# Journal file: E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-L1Ul0lBY
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
-# Processor Detail  :AMD Ryzen 7 6800HS Creator Edition
-# CPU Frequency     :3194 MHz
-# CPU Physical cores:8
+# Operating System  :22000
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :3110 MHz
+# CPU Physical cores:12
 # CPU Logical cores :16
-# Host memory       :14702 MB
-# Swap memory       :14023 MB
-# Total Virtual     :28725 MB
-# Available Virtual :5600 MB
+# Host memory       :16892 MB
+# Swap memory       :0 MB
+# Total Virtual     :16892 MB
+# Available Virtual :4424 MB
 #-----------------------------------------------------------
 source display.tcl -notrace

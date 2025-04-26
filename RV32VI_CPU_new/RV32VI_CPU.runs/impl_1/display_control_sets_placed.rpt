@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Apr  2 20:55:37 2025
-| Host         : LAPTOP-0ELO93SN running 64-bit major release  (build 9200)
+| Date         : Wed Apr 23 21:16:51 2025
+| Host         : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file display_control_sets_placed.rpt
 | Design       : display
 | Device       : xc7a200t
@@ -78,17 +78,17 @@ Table of Contents
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/set_xy_valid_reg_n_0       | lcd_module/lcd_draw_module/draw_block_number1         |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[3]_i_1_n_0        | lcd_module/touch_module/input_value[31]_i_1_n_0       |                2 |              4 |         2.00 |
 |  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/display_count_y[4]_i_1_n_0 |                1 |              5 |         5.00 |
-|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             | lcd_module/lcd_draw_module/draw_data[4]_i_1_n_0       |                3 |              5 |         1.67 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_x_h[4]_i_1_n_0     | lcd_module/lcd_init_module/init_display_begin0        |                2 |              5 |         2.50 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/init_display_begin_reg_n_0 | lcd_module/lcd_init_module/init_display_begin0        |                3 |              5 |         1.67 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             | lcd_module/lcd_draw_module/draw_data[4]_i_1_n_0       |                3 |              5 |         1.67 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_block_end             | lcd_module/lcd_draw_module/draw_block_number0         |                2 |              6 |         3.00 |
 |  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/clk_count0                    |                2 |              6 |         3.00 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/display_count_x[7]_i_2_n_0 | lcd_module/lcd_draw_module/display_count_x[7]_i_1_n_0 |                2 |              8 |         4.00 |
 |  clk_IBUF_BUFG         | lcd_module/touch_module/send_byte[0]_i_1_n_0          |                                                       |                2 |              8 |         4.00 |
 |  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/td_count_y0                |                5 |              9 |         1.80 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/td_count_x[8]_i_2_n_0      | lcd_module/lcd_draw_module/td_count_x[8]_i_1_n_0      |                4 |              9 |         2.25 |
-|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             |                                                       |                4 |             10 |         2.50 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_y0                 | lcd_module/lcd_init_module/init_display_begin0        |                6 |             10 |         1.67 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             |                                                       |                4 |             10 |         2.50 |
 |  cpu_clk               |                                                       |                                                       |                6 |             10 |         1.67 |
 |  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/sel                        | lcd_module/lcd_init_module/init_rom_pc0               |                6 |             11 |         1.83 |
 |  lcd_module/clk_2_BUFG |                                                       |                                                       |                9 |             18 |         2.00 |
@@ -98,14 +98,14 @@ Table of Contents
 |  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/int_o_en_reg_0                |               12 |             26 |         2.17 |
 |  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[31]_i_2_n_0       | lcd_module/touch_module/input_value[31]_i_1_n_0       |                5 |             28 |         5.60 |
 |  cpu_clk               | cpu/timer/state_reg[2]_0[0]                           | resetn_IBUF                                           |                8 |             30 |         3.75 |
-|  cpu_clk               | cpu/timer/E[0]                                        | resetn_IBUF                                           |               10 |             32 |         3.20 |
 |  clk_IBUF_BUFG         | lcd_module/touch_module/input_valid_OBUF              | p_0_in                                                |                8 |             32 |         4.00 |
+|  cpu_clk               | cpu/timer/E[0]                                        | resetn_IBUF                                           |               10 |             32 |         3.20 |
 |  cpu_clk               | cpu/timer/state_reg[1]_0[0]                           | resetn_IBUF                                           |               10 |             32 |         3.20 |
 |  cpu_clk               | cpu/timer/reset_delay_cnt_reg[1]_2                    |                                                       |               11 |             33 |         3.00 |
-|  cpu_clk               | cpu/decoder_inst/E[0]                                 | resetn_IBUF                                           |               17 |             49 |         2.88 |
 |  cpu_clk               | cpu/exe_inst/E[0]                                     | resetn_IBUF                                           |               11 |             49 |         4.45 |
-|  cpu_clk               | cpu/timer/reset_delay_cnt_reg[1]_1[0]                 | resetn_IBUF                                           |               16 |             57 |         3.56 |
+|  cpu_clk               | cpu/decoder_inst/E[0]                                 | resetn_IBUF                                           |               17 |             49 |         2.88 |
 |  cpu_clk               | cpu/timer/state_reg[1]_1[0]                           | resetn_IBUF                                           |               21 |             57 |         2.71 |
+|  cpu_clk               | cpu/timer/reset_delay_cnt_reg[1]_1[0]                 | resetn_IBUF                                           |               16 |             57 |         3.56 |
 |  clk_IBUF_BUFG         |                                                       |                                                       |               54 |            119 |         2.20 |
 |  cpu_clk               |                                                       | resetn_IBUF                                           |               82 |            261 |         3.18 |
 +------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+

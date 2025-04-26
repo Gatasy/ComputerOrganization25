@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1/display.tcl"
+  variable script "E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/impl_1/display.tcl"
   variable category "vivado_impl"
 }
 
@@ -105,33 +105,32 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 16  }
+  set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a200tfbv676-2
+  create_project -in_memory -part xc7a200tfbg676-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir E:/vivado/RV32VI_CPU_new/RV32VI_CPU.cache/wt [current_project]
-  set_property parent.project_path E:/vivado/RV32VI_CPU_new/RV32VI_CPU.xpr [current_project]
-  set_property ip_output_repo E:/vivado/RV32VI_CPU_new/RV32VI_CPU.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.cache/wt [current_project]
+  set_property parent.project_path E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.xpr [current_project]
+  set_property ip_output_repo E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.dcp
-  read_ip -quiet E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_ip -quiet E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-  add_files -quiet E:/vivado/RV32VI_CPU_new/lcd_module.dcp
+  add_files -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.dcp
+  read_ip -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+  add_files -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/lcd_module.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc
+  read_xdc E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top display -part xc7a200tfbv676-2 
+  link_design -top display -part xc7a200tfbg676-2 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }

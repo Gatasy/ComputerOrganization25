@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Apr  2 11:46:48 2025
+-- Date        : Wed Apr  2 11:46:46 2025
 -- Host        : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               e:/NItemp/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top blk_mem_gen_0 -prefix
+--               blk_mem_gen_0_ blk_mem_gen_0_stub.vhdl
 -- Design      : blk_mem_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbv676-2

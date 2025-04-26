@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.tcl"
+  variable script "E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,44 +56,42 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a200tfbv676-2
+create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/vivado/RV32VI_CPU_new/RV32VI_CPU.cache/wt [current_project]
-set_property parent.project_path E:/vivado/RV32VI_CPU_new/RV32VI_CPU.xpr [current_project]
+set_property webtalk.parent_dir E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.cache/wt [current_project]
+set_property parent.project_path E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/vivado/RV32VI_CPU_new/RV32VI_CPU.cache/ip [current_project]
+set_property ip_output_repo e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files E:/vivado/RV32VI_CPU_new/instruction_memory.coe
-add_files E:/vivado/RV32VI_CPU_new/test2.coe
-add_files -quiet E:/vivado/RV32VI_CPU_new/lcd_module.dcp
-set_property used_in_implementation false [get_files E:/vivado/RV32VI_CPU_new/lcd_module.dcp]
+add_files E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/instruction_memory.coe
+add_files E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/test2.coe
+add_files -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/lcd_module.dcp
+set_property used_in_implementation false [get_files E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/lcd_module.dcp]
 read_verilog -library xil_defaultlib {
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v
-  E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v
+  E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v
 }
-read_ip -quiet E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-set_property used_in_implementation false [get_files -all e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+read_ip -quiet E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -104,16 +102,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc
-set_property used_in_implementation false [get_files E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
+read_xdc E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc
+set_property used_in_implementation false [get_files E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp
+read_checkpoint -auto_incremental -incremental E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top display -part xc7a200tfbv676-2
+synth_design -top display -part xc7a200tfbg676-2
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

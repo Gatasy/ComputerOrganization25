@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/FGPA/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/FGPA/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/FGPA/Vivado/2024.1/bin
+  PATH=E:/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2024.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2024.1/bin
 else
-  PATH=D:/FGPA/Vivado/2024.1/ids_lite/ISE/bin/nt64;D:/FGPA/Vivado/2024.1/ids_lite/ISE/lib/nt64:D:/FGPA/Vivado/2024.1/bin:$PATH
+  PATH=E:/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2024.1/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2024.1/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1'
+HD_PWD='E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

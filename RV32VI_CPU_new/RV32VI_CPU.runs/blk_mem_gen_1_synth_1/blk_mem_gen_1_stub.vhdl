@@ -2,13 +2,13 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Wed Apr  2 15:16:26 2025
--- Host        : LAPTOP-0ELO93SN running 64-bit major release  (build 9200)
+-- Date        : Wed Apr 23 21:15:18 2025
+-- Host        : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ blk_mem_gen_1_stub.vhdl
 -- Design      : blk_mem_gen_1
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xc7a200tfbv676-2
+-- Device      : xc7a200tfbg676-2
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

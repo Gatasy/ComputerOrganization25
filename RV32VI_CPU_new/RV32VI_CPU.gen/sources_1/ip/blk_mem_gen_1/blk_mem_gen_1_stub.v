@@ -2,13 +2,13 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Wed Apr  2 15:16:27 2025
-// Host        : LAPTOP-0ELO93SN running 64-bit major release  (build 9200)
+// Date        : Wed Apr 23 21:15:19 2025
+// Host        : DESKTOP-L1Ul0lBY running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               e:/vivado/RV32VI_CPU/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v
+//               e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v
 // Design      : blk_mem_gen_1
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a200tfbv676-2
+// Device      : xc7a200tfbg676-2
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

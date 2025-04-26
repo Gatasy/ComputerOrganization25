@@ -8,58 +8,66 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Apr  2 20:53:36 2025
+  **** Start of session at: Wed Apr 23 21:15:22 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source display.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 531.227 ; gain = 199.027
-Command: read_checkpoint -auto_incremental -incremental E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 532.031 ; gain = 198.500
+Command: read_checkpoint -auto_incremental -incremental E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/utils_1/imports/synth_1/multi_cycle_cpu_display.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top display -part xc7a200tfbv676-2
+Command: synth_design -top display -part xc7a200tfbg676-2
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Current project part 'xc7a200tfbg676-2' and the part 'xc7a200tfbv676-2' used to customize the IP 'blk_mem_gen_0' do not match.
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* Current project part 'xc7a200tfbg676-2' and the part 'xc7a200tfbv676-2' used to customize the IP 'blk_mem_gen_1' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
-INFO: [Device 21-403] Loading part xc7a200tfbv676-2
-INFO: [Device 21-9227] Part: xc7a200tfbv676-2 does not have CEAM library.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Device 21-9227] Part: xc7a200tfbg676-2 does not have CEAM library.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32460
+INFO: [Synth 8-7075] Helper process launched with PID 10164
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1448.984 ; gain = 448.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1449.398 ; gain = 448.992
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6901] identifier 'ID_EXE_bus_r' is used before its declaration [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:107]
-INFO: [Synth 8-6157] synthesizing module 'display' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:8]
-INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [D:/FGPA/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1961]
-INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [D:/FGPA/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1961]
-INFO: [Synth 8-6157] synthesizing module 'CPU_Top' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Timer' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Timer' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ifetch' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ifetch' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v:1]
-INFO: [Synth 8-6157] synthesizing module 'regfile' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:8]
-INFO: [Synth 8-6157] synthesizing module 'Decoder' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Decoder' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v:23]
-INFO: [Synth 8-6157] synthesizing module 'exe' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'exe' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v:2]
-INFO: [Synth 8-6157] synthesizing module 'MEM_stage' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'MEM_stage' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v:3]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'blk_mem_gen_0' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:269]
-INFO: [Synth 8-6157] synthesizing module 'wb' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'wb' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v:1]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'CPU_Top' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:6]
-INFO: [Synth 8-6157] synthesizing module 'lcd_module' [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/lcd_module_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_module' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-38684-LAPTOP-0ELO93SN/realtime/lcd_module_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:8]
-WARNING: [Synth 8-6014] Unused sequential element rf_reg[0] was removed.  [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:31]
+WARNING: [Synth 8-6901] identifier 'ID_EXE_bus_r' is used before its declaration [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:107]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:8]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [E:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1961]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [E:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1961]
+INFO: [Synth 8-6157] synthesizing module 'CPU_Top' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Timer' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Timer' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/timer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ifetch' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ifetch' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/ifetch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'exe' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'exe' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/exe2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MEM_stage' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_stage' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/mem_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'wea' does not match port width (1) of module 'blk_mem_gen_0' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:269]
+INFO: [Synth 8-6157] synthesizing module 'wb' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/wb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_Top' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/cpu.v:6]
+INFO: [Synth 8-6157] synthesizing module 'lcd_module' [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_module' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/.Xil/Vivado-3688-DESKTOP-L1Ul0lBY/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:8]
+WARNING: [Synth 8-6014] Unused sequential element rf_reg[0] was removed.  [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/regfile.v:31]
 WARNING: [Synth 8-7129] Port clk in module wb is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rst in module wb is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ID_EXE_bus[43] in module exe is either unconnected or has no load
@@ -92,18 +100,18 @@ WARNING: [Synth 8-7129] Port test_mem_addr[17] in module CPU_Top is either uncon
 WARNING: [Synth 8-7129] Port test_mem_addr[1] in module CPU_Top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port test_mem_addr[0] in module CPU_Top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1568.188 ; gain = 567.594
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1568.348 ; gain = 567.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1568.188 ; gain = 567.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1568.348 ; gain = 567.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1568.188 ; gain = 567.594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1568.348 ; gain = 567.941
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1568.188 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1571.012 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -111,37 +119,37 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/data_memory'
-Finished Parsing XDC File [e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/data_memory'
-Parsing XDC File [e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'cpu/inst_memory'
-Finished Parsing XDC File [e:/vivado/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'cpu/inst_memory'
-Parsing XDC File [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
-WARNING: [Vivado 12-507] No nets matched 'btn_clk_IBUF'. [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc:10]
+Parsing XDC File [e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/data_memory'
+Finished Parsing XDC File [e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/data_memory'
+Parsing XDC File [e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'cpu/inst_memory'
+Finished Parsing XDC File [e:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'cpu/inst_memory'
+Parsing XDC File [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
+WARNING: [Vivado 12-507] No nets matched 'btn_clk_IBUF'. [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc:10]
 CRITICAL WARNING: [Common 17-1548] Command failed: invalid command name "SET_PROPERTY"
- [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc:14]
-Finished Parsing XDC File [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/display_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_propImpl.xdc].
+ [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc:14]
+Finished Parsing XDC File [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/display_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/constrs_1/new/cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1664.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1680.512 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1664.273 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1680.512 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a200tfbv676-2
+Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -149,10 +157,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property KEEP_HIERARCHY = SOFT for cpu/data_memory. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cpu/inst_memory. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -236,25 +244,25 @@ WARNING: [Synth 8-7129] Port test_mem_addr[17] in module CPU_Top is either uncon
 WARNING: [Synth 8-7129] Port test_mem_addr[1] in module CPU_Top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port test_mem_addr[0] in module CPU_Top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -271,39 +279,39 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5410] Found another clock driver cpu_clk_cg:O [E:/vivado/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:50]
+WARNING: [Synth 8-5410] Found another clock driver cpu_clk_cg:O [E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.srcs/sources_1/new/display.v:50]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -340,30 +348,30 @@ Report Cell Usage:
 |17    |OBUF        |     8|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1664.273 ; gain = 567.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1664.273 ; gain = 663.680
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1680.512 ; gain = 567.941
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1680.512 ; gain = 680.105
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1664.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1680.512 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'cpu_clk_cg' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1664.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1680.512 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
 
 Synth Design complete | Checksum: 45a29254
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 71 Warnings, 1 Critical Warnings and 0 Errors encountered.
+52 Infos, 72 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:47 . Memory (MB): peak = 1664.273 ; gain = 1120.176
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1680.512 ; gain = 1136.707
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1664.273 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'E:/vivado/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1680.512 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/RV32VI_CPU_new/RV32VI_CPU.runs/synth_1/display.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file display_utilization_synth.rpt -pb display_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  2 20:54:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 21:16:06 2025...

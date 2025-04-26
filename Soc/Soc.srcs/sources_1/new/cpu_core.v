@@ -15,7 +15,7 @@ module cpuCore(
     input  wire        rstn,
 
     //Peripheral interrupt
-    input  wire  i_intFlag_1,
+    input  wire  i_intFlag_1, //the output interrupt signal
     input wire init_enable,
     
     //bus to ifStage
@@ -108,16 +108,17 @@ module cpuCore(
 	
 	wire [31:0] 	w_Inst_Third_32;
 	wire [31:0] 	w_PC_Third_32;
-	wire [11:0] w_ifToHazard_12;
-    wire [18:0] w_exToHazard_19;
-    wire [ 5:0] w_lsToHazard_6;
-    wire [ 3:0] w_forward_first_4;
-    wire [ 1:0] w_forward_second_2;
-	wire [ 31:0]  w_exeResult_32;			//tag
-	wire [ 31:0]  w_lsuResult_32;
-	wire [63:0 ] w_ToIf_64;
-	wire [63:0 ] w_ToId_64;
+	wire [11:0]     w_ifToHazard_12;
+    wire [18:0]     w_exToHazard_19;
+    wire [ 5:0]     w_lsToHazard_6;
+    wire [ 3:0]     w_forward_first_4;
+    wire [ 1:0]     w_forward_second_2;
+	wire [ 31:0]    w_exeResult_32;			//tag
+	wire [ 31:0]    w_lsuResult_32;
+	wire [63:0 ]    w_ToIf_64;
+	wire [63:0 ]    w_ToId_64;
     //冲刷前递信号
+    //deal with hazard, select w_forward_first_4 or w_forward_first_2
 	assign w_ToIf_64[63:32] =  (w_forward_first_4[3:2]==2'b01)?w_exeResult_32:
 							   (w_forward_first_4[3:2]==2'b10)?w_lsuResult_32:
 							   w_grfToIf_64[63:32];								 								  
@@ -131,18 +132,18 @@ module cpuCore(
     // ---------------------------------------------
     // PC-IF
     // ---------------------------------------------
-    
+    //check any module pause,freeze the following process
     assign w_holdflag_if_1=(init_enable)?1'b1:(w_LsuPipeHold_1)?1'b1:
                            (w_idPipeHold_1)?1'b1:
                            1'b0;
-    assign w_holdflag_ifde_1=(w_LsuPipeHold_1)?1'b1:
+    assign w_holdflag_ifde_1=(w_LsuPipeHold_1)?1'b1: //wait for the pause 
                            (w_idPipeHold_1)?1'b1:
                            1'b0;
-    assign w_holdflag_dels_1=(w_LsuPipeHold_1)?1'b1:
+    assign w_holdflag_dels_1=(w_LsuPipeHold_1)?1'b1: //wait for the ready data 
 							1'b0;
-    assign w_flushflag_ifde_1=(w_FlushSecond_Clint)?1'b1:
+    assign w_flushflag_ifde_1=(w_FlushSecond_Clint)?1'b1: //deal with the interrupt/error,clear the module IF/ID
                            1'b0;
-    assign w_flushflag_dels_1=(w_FlushThird_Clint)?1'b1:
+    assign w_flushflag_dels_1=(w_FlushThird_Clint)?1'b1:  //clear the module ID/EXE
 							1'b0;
     
     ifStage ifStage(
@@ -151,18 +152,18 @@ module cpuCore(
 		.i_holdflag_if_1(w_holdflag_if_1),
 		.i_inst_32(i_instData_32),          
 		.i_isIntPC_1(w_PC_Clint_32En),         
-		.i_intPC_32(w_PC_Clint_32),
+		.i_intPC_32(w_PC_Clint_32), //interrupt/abnormal scheme
 		.i_grfToIf_64(w_ToIf_64),  
-		.o_nextPC_32(w_nextPC_32),
+		.o_nextPC_32(w_nextPC_32), //normal scheme
 		.o_pc_if_32(w_pc_if_32), 
 		.o_intIns_if_32(w_intIns_if_32), 
 		.o_PcAndinstr_64(w_pcAndIns_if_64),
-		.o_ifToGrf_10(w_ifToHazard_12[11:2]),
-		.o_ifEnToGrf_2(w_ifToHazard_12[1:0]),
+		.o_ifToGrf_10(w_ifToHazard_12[11:2]), //hazard part
+		.o_ifEnToGrf_2(w_ifToHazard_12[1:0]), 
 		.o_InstrAcceFaultFirst_if_1(w_InstrAcceFaultFirst_1),
-		.o_ecall_1(w_EcallFirst_1),
-		.o_ebreak_1(w_EbreakFirst_1),
-		.o_mret_1(w_MretFirst_1)
+		.o_ecall_1(w_EcallFirst_1), //instruction is ecall 
+		.o_ebreak_1(w_EbreakFirst_1), //instruction is ebreak
+		.o_mret_1(w_MretFirst_1) //return from interrupt
     );
     
     assign o_instAddr_32=w_nextPC_32;
@@ -170,8 +171,8 @@ module cpuCore(
     if_de if_de(
 		.clk(clk),  
 		.rstn(rstn),                
-		.i_holdflag_1(w_holdflag_ifde_1),
-		.i_flushflag_1(w_flushflag_ifde_1),
+		.i_holdflag_1(w_holdflag_ifde_1), //pause the process
+		.i_flushflag_1(w_flushflag_ifde_1),  //insert bubble, flush the process
 		.i_instAndPc_64(w_pcAndIns_if_64),      	
 		.o_instAndPc_64(w_pcAndIns_de_64)
     );
@@ -184,8 +185,8 @@ module cpuCore(
 		.clk(clk),
 		.rstn(rstn),		
 		.i_PcAndinstr_64(w_pcAndIns_de_64),
-		.o_idPipeHold_1(w_idPipeHold_1),
-		.o_secondtogrf_10(w_secondtogrf_10),        
+		.o_idPipeHold_1(w_idPipeHold_1),  //hazard enable stop signal
+		.o_secondtogrf_10(w_secondtogrf_10),  //write back to the grf selection      
 		.i_grfToId_64(w_ToId_64),
 		.i_csrData_32(w_CsrReadData_32),                         
 		.o_idToCsr_45(w_exeToCsr_45),
@@ -302,6 +303,7 @@ module cpuCore(
 		.o_FlushSecond_Clint(w_FlushSecond_Clint), 
 		.o_FlushThird_Clint(w_FlushThird_Clint)
     );
+    
     CSR CSR(
 		.clk(clk),
 		.rstn(rstn),
