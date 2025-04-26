@@ -1,0 +1,1700 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Apr 26 23:24:51 2025
+# Process ID: 20980
+# Current directory: E:/NItemp/5_cpu/src/mycpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3172 E:\NItemp\5_cpu\src\mycpu\mycpu.xpr
+# Log file: E:/NItemp/5_cpu/src/mycpu/vivado.log
+# Journal file: E:/NItemp/5_cpu/src/mycpu\vivado.jou
+# Running On        :DESKTOP-L1Ul0lBY
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22000
+# Processor Detail  :12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency     :3110 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16892 MB
+# Swap memory       :0 MB
+# Total Virtual     :16892 MB
+# Available Virtual :4417 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/NItemp/5_cpu/src/mycpu/mycpu.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/NItemp/25CourseComputerArchitecture/Asyncsys_bus_bus4LZU_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2023.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_1' (customized with software release 2023.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1576.309 ; gain = 421.406
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rst' on this module [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:202]
+ERROR: [VRFC 10-8530] module 'blk_mem_gen_v8_4_7(C_FAMILY="kintex7",C_XDEVICEFAMILY="kintex7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="blk_mem_gen_0.mem",C_USE_DEFAULT_DATA=1,C_HAS_ENA=0,C_WRITE_MODE_A="READ_FIRST",C_WRITE_DEPTH_A=512,C_READ_DEPTH_A=512,C_ADDRA_WIDTH=9,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_DEPTH_B=512,C_READ_DEPTH_B=512,C_ADDRB_WIDTH=9,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="0",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____3.64395_mW")' is ignored due to previous errors [E:/NItemp/5_cpu/src/mycpu/mycpu.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v:3457]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+move_files -fileset sim_1 [get_files  E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/NItemp/5_cpu/src/mycpu/inst_mem.hex
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rst' on this module [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:202]
+ERROR: [VRFC 10-8530] module 'blk_mem_gen_v8_4_7(C_FAMILY="kintex7",C_XDEVICEFAMILY="kintex7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="blk_mem_gen_0.mem",C_USE_DEFAULT_DATA=1,C_HAS_ENA=0,C_WRITE_MODE_A="READ_FIRST",C_WRITE_DEPTH_A=512,C_READ_DEPTH_A=512,C_ADDRA_WIDTH=9,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_DEPTH_B=512,C_READ_DEPTH_B=512,C_ADDRB_WIDTH=9,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="0",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____3.64395_mW")' is ignored due to previous errors [E:/NItemp/5_cpu/src/mycpu/mycpu.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v:3457]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1 E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+INFO: [Project 1-386] Moving file 'E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci' from fileset 'blk_mem_gen_1' to fileset 'sources_1'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_4
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_4
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_output_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'rst' on this module [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:202]
+ERROR: [VRFC 10-8530] module 'blk_mem_gen_v8_4_7(C_FAMILY="kintex7",C_XDEVICEFAMILY="kintex7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="blk_mem_gen_0.mem",C_USE_DEFAULT_DATA=1,C_HAS_ENA=0,C_WRITE_MODE_A="READ_FIRST",C_WRITE_DEPTH_A=512,C_READ_DEPTH_A=512,C_ADDRA_WIDTH=9,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_DEPTH_B=512,C_READ_DEPTH_B=512,C_ADDRB_WIDTH=9,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="0",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____3.64395_mW")' is ignored due to previous errors [E:/NItemp/5_cpu/src/mycpu/mycpu.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v:3457]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:116]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:206]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1640.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_top_tb.uut.pc1.icache.inst.native_mem_module.blk_mem_gen_v8_4_7_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1683.703 ; gain = 42.797
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:116]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:206]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_top_tb.uut.pc1.icache.inst.native_mem_module.blk_mem_gen_v8_4_7_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1715.492 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library blk_mem_gen_v8_4_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:116]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:206]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_output_stage(...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_7.blk_mem_gen_v8_4_7(C_FAMILY="kin...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_top_tb.uut.pc1.icache.inst.native_mem_module.blk_mem_gen_v8_4_7_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[INST FETCH] @               25000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               35000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               45000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               55000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               65000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               75000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               85000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               95000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              105000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              115000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              125000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              135000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              145000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              155000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              165000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              175000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              185000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              195000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              205000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              215000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              225000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              235000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              245000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              255000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              265000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              275000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              285000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              295000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              305000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              315000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              325000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              335000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              345000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              355000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              365000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              375000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              385000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              395000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              405000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              415000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              425000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              435000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              445000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              455000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              465000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              475000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              485000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              495000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              505000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              515000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              525000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              535000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              545000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              555000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              565000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              575000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              585000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              595000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              605000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              615000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              625000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              635000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              645000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              655000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              665000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              675000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              685000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              695000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              705000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              715000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              725000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              735000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              745000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              755000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              765000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              775000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              785000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              795000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              805000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              815000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              825000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              835000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              845000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              855000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              865000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              875000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              885000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              895000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              905000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              915000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              925000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              935000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              945000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              955000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              965000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              975000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              985000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              995000: pc=0x00000000 inst=0x00000093
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1737.922 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <lsu_bus> not found while processing module instance <u_lsu> [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:180]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:108]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:212]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INST FETCH] @               25000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               35000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               45000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               55000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               65000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               75000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               85000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               95000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              105000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              115000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              125000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              135000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              145000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              155000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              165000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              175000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              185000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              195000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              205000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              215000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              225000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              235000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              245000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              255000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              265000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              275000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              285000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              295000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              305000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              315000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              325000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              335000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              345000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              355000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              365000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              375000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              385000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              395000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              405000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              415000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              425000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              435000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              445000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              455000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              465000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              475000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              485000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              495000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              505000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              515000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              525000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              535000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              545000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              555000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              565000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              575000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              585000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              595000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              605000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              615000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              625000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              635000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              645000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              655000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              665000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              675000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              685000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              695000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              705000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              715000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              725000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              735000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              745000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              755000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              765000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              775000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              785000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              795000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              805000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              815000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              825000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              835000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              845000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              855000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              865000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              875000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              885000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              895000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              905000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              915000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              925000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              935000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              945000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              955000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              965000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              975000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              985000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              995000: pc=0x00000010 inst=0x00010113
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:108]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:212]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INST FETCH] @               25000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               35000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               45000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               55000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               65000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               75000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               85000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @               95000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              105000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              115000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              125000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              135000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              145000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              155000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              165000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              175000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              185000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              195000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              205000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              215000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              225000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              235000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              245000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              255000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              265000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              275000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              285000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              295000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              305000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              315000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              325000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              335000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              345000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              355000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              365000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              375000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              385000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              395000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              405000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              415000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              425000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              435000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              445000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              455000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              465000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              475000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              485000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              495000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              505000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              515000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              525000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              535000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              545000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              555000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              565000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              575000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              585000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              595000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              605000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              615000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              625000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              635000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              645000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              655000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              665000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              675000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              685000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              695000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              705000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              715000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              725000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              735000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              745000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              755000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              765000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              775000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              785000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              795000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              805000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              815000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              825000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              835000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              845000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              855000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              865000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              875000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              885000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              895000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              905000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              915000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              925000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              935000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              945000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              955000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              965000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              975000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              985000: pc=0x00000010 inst=0x00010113
+[INST FETCH] @              995000: pc=0x00000010 inst=0x00010113
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.922 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:108]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:212]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INST FETCH] @               25000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               35000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               45000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               55000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               65000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               75000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               85000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               95000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              105000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              115000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              125000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              135000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              145000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              155000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              165000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              175000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              185000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              195000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              205000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              215000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              225000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              235000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              245000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              255000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              265000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              275000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              285000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              295000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              305000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              315000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              325000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              335000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              345000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              355000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              365000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              375000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              385000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              395000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              405000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              415000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              425000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              435000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              445000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              455000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              465000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              475000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              485000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              495000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              505000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              515000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              525000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              535000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              545000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              555000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              565000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              575000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              585000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              595000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              605000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              615000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              625000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              635000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              645000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              655000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              665000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              675000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              685000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              695000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              705000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              715000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              725000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              735000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              745000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              755000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              765000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              775000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              785000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              795000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              805000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              815000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              825000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              835000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              845000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              855000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              865000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              875000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              885000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              895000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              905000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              915000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              925000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              935000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              945000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              955000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              965000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              975000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              985000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @              995000: pc=0x00000000 inst=0x00000093
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.922 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\cpu_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\pc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:108]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:212]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INST FETCH] @                5000: pc=0x00000000 inst=0x00000093
+[INST FETCH] @               15000: pc=0x00000000 inst=0x00000093
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'cpu_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2024.1/data/xsim/xsim.ini' copied to run dir:'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim/inst_mem.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_top_tb_behav xil_defaultlib.cpu_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'o_index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:108]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'index' [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v:212]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.grf
+Compiling module xil_defaultlib.prejump
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.lsu
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/NItemp/5_cpu/src/mycpu/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_top_tb_behav -key {Behavioral:sim_1:Functional:cpu_top_tb} -tclbatch {cpu_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source cpu_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INST FETCH] @25000 pc=0x00000000 inst=0x00000093 swio_i=0 timer_i=0
+[INST FETCH] @35000 pc=0x00000004 inst=0x00100113 swio_i=0 timer_i=0
+[INST FETCH] @45000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @55000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @65000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @75000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @85000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @95000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @105000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @115000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @125000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @135000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @145000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @155000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @165000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @175000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @185000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @195000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @205000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @215000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @225000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @235000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @245000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @255000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @265000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @275000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @285000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @295000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @305000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @315000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @325000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @335000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @345000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @355000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @365000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @375000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @385000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @395000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @405000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @415000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @425000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @435000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @445000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @455000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @465000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @475000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @485000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @495000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[TEST] swio_i asserted at 500000
+[INST FETCH] @505000 pc=0x0000000c inst=0x00310223 swio_i=1 timer_i=0
+[INST FETCH] @515000 pc=0x00000008 inst=0x002081b3 swio_i=1 timer_i=0
+[TEST] swio_i deasserted at 520000
+[INST FETCH] @525000 pc=0xxxxxxxxx inst=0xxxxxxxxx swio_i=0 timer_i=0
+[INST FETCH] @535000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @545000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @555000 pc=0x00000010 inst=0x00010113 swio_i=0 timer_i=0
+[INST FETCH] @565000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @575000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @585000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @595000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @605000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @615000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @625000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @635000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @645000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @655000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @665000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @675000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @685000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @695000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @705000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @715000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @725000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @735000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @745000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @755000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @765000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @775000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @785000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @795000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @805000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @815000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @825000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @835000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @845000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @855000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @865000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @875000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @885000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @895000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @905000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @915000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @925000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @935000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @945000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @955000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @965000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @975000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[INST FETCH] @985000 pc=0x00000008 inst=0x002081b3 swio_i=0 timer_i=0
+[INST FETCH] @995000 pc=0x0000000c inst=0x00310223 swio_i=0 timer_i=0
+[TEST] timer_i asserted at 1000000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1737.922 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/NItemp/5_cpu/src/mycpu/mycpu.runs/blk_mem_gen_0_synth_1
+
+INFO: [Project 1-386] Moving file 'E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+close [ open E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/top.v w ]
+add_files E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\NItemp\5_cpu\src\mycpu\mycpu.srcs\sources_1\new\top.v:]
+ERROR: [Common 17-180] Spawn failed: No error

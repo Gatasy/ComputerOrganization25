@@ -1,8 +1,0 @@
-0.7
-2020.2
-May 22 2024
-19:03:11
-E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
-E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v,1745064862,verilog,,,,data_init,,,../../../../Soc.gen/sources_1/ip/bus4LZU_0/sources_1/new/header;../../../../Soc.srcs/sources_1/new,,,,,
-E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_rx.v,1745065132,verilog,,E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_tx.v,,uart_rx,,,../../../../Soc.gen/sources_1/ip/bus4LZU_0/sources_1/new/header;../../../../Soc.srcs/sources_1/new,,,,,
-E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/uart_tx.v,1745065161,verilog,,E:/NItemp/25CourseComputerArchitecture/ComputerOrganization25/Soc/Soc.srcs/sources_1/new/data_init.v,,uart_tx,,,../../../../Soc.gen/sources_1/ip/bus4LZU_0/sources_1/new/header;../../../../Soc.srcs/sources_1/new,,,,,

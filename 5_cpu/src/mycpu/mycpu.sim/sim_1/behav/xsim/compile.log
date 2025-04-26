@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/LoongArch.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+WARNING: [VRFC 10-8497] literal value 'b11111 truncated to fit in 4 bits [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/extend.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/grf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module grf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/lsu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lsu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+WARNING: [VRFC 10-3380] identifier 'jump_sign2_stop' is used before its declaration [E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/pc.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/prejump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prejump
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/writeback.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module writeback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/NItemp/5_cpu/src/mycpu/mycpu.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top_tb
